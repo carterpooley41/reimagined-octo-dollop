@@ -2,46 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Bot Test Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-body {
-font-family: Arial, sans-serif;
-background: #f5f5f5;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-min-height: 100vh;
-margin: 0;
-padding-top: 30px;
-}
-#AIChatWidget {
-width: 90%;
-max-width: 600px;
-height: 80vh;
-background: white;
-border: 2px solid #ccc;
-border-radius: 10px;
-overflow: hidden;
-position: relative;
-margin-top: 20px;
-}
-</style>
+<title>Your Website</title>
 </head>
 <body>
 
-<h1>Bot Formatting Test</h1>
+<!-- Your website content goes here -->
 
-<!-- This div is where your bot will inject itself -->
-<div id="AIChatWidget"></div>
-
-<!-- Your TestMyPrompt Bot Script -->
-<script src="https://testmyprompt.com/widget/680eaf3fa890511245c24998/widget.js"></script>
+<!-- AI Widget Script - Paste before the closing </body> tag -->
+<script src="https://testmyprompt.com/widget/681158a2fc6d93c4a7eea80a/widget.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
 window.AIChatWidget.init({
-widgetId: "680eaf3fa890511245c24998"
+widgetId: "681158a2fc6d93c4a7eea80a"
 });
 });
 </script>
