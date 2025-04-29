@@ -9,11 +9,12 @@ body {
 font-family: Arial, sans-serif;
 background: #f5f5f5;
 display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
 flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+min-height: 100vh;
+margin: 0;
+padding-top: 30px;
 }
 #AIChatWidget {
 width: 90%;
@@ -24,6 +25,7 @@ border: 2px solid #ccc;
 border-radius: 10px;
 overflow: hidden;
 position: relative;
+margin-top: 20px;
 }
 </style>
 </head>
@@ -31,10 +33,10 @@ position: relative;
 
 <h1>Bot Formatting Test</h1>
 
-<!-- Bot loads into this div -->
+<!-- This div is where your bot will inject itself -->
 <div id="AIChatWidget"></div>
 
-<!-- Embed your TestMyPrompt bot here -->
+<!-- Your TestMyPrompt Bot Script -->
 <script src="https://testmyprompt.com/widget/680eaf3fa890511245c24998/widget.js"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
