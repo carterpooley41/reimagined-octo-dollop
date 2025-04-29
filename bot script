@@ -15,7 +15,7 @@ height: 100vh;
 margin: 0;
 flex-direction: column;
 }
-.bot-container {
+#AIChatWidget {
 width: 90%;
 max-width: 600px;
 height: 80vh;
@@ -30,25 +30,19 @@ position: relative;
 <body>
 
 <h1>Bot Formatting Test</h1>
-<div class="bot-container">
-<!-- DROP YOUR BOT CODE BELOW THIS COMMENT -->
 
+<!-- Bot loads into this div -->
+<div id="AIChatWidget"></div>
 
-
-<!-- Example placeholder -->
-<!-- <iframe src="YOUR_BOT_LINK_HERE" width="100%" height="100%" frameborder="0"></iframe> -->
-
-<!-- DROP YOUR BOT CODE ABOVE THIS COMMENT -->
-</div>
-<!-- Add this to your HTML page, preferably before the closing </body> tag -->
+<!-- Embed your TestMyPrompt bot here -->
 <script src="https://testmyprompt.com/widget/680eaf3fa890511245c24998/widget.js"></script>
 <script>
-  // Initialize the widget after the script loads
-  document.addEventListener('DOMContentLoaded', function() {
-    window.AIChatWidget.init({
-      widgetId: "680eaf3fa890511245c24998"
-    });
-  });
+document.addEventListener('DOMContentLoaded', function() {
+window.AIChatWidget.init({
+widgetId: "680eaf3fa890511245c24998"
+});
+});
 </script>
+
 </body>
 </html>
